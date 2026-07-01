@@ -1,0 +1,84 @@
+{
+    "name": "@jbeche/ng-datatable",
+    "version": "0.2.0",
+    "description": "ng-datatable - fully customizable & easy to use datatable library",
+    "private": false,
+    "author": {
+        "name": "Djalil Beche"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jbeche/ng-datatable.git"
+    },
+    "bugs": {
+        "url": "https://github.com/jbeche/ng-datatable/issues"
+    },
+    "homepage": "https://github.com/jbeche/ng-datatable#readme",
+    "funding": "https://github.com/sponsors/bhaveshpatel200",
+    "keywords": [
+        "angular",
+        "angularjs",
+        "angular2",
+        "datatable",
+        "angular datatable",
+        "ng datatable",
+        "ng-datatable",
+        "ngx datatable",
+        "ngx-datatable",
+        "angular grid",
+        "angular table",
+        "datagrid",
+        "data-grid",
+        "data-table",
+        "data grid",
+        "data table",
+        "table",
+        "grid",
+        "filter",
+        "sorting",
+        "pagination"
+    ],
+    "license": "MIT",
+    "publishConfig": {
+        "access": "public"
+    },
+    "scripts": {
+        "ng": "ng",
+        "start": "ng serve",
+        "build": "ng build",
+        "watch": "ng build --watch --configuration development",
+        "test": "ng test",
+        "packagr": "npm run tailwind:build && ng-packagr -p ng-package.json",
+        "tailwind": "npx tailwindcss -i ./src/assets/css/tailwind.css -o ./lib/style.css --watch",
+        "tailwind:build": "npx tailwindcss -i ./src/assets/css/tailwind.css -o ./lib/style.css --minify"
+    },
+    "peerDependencies": {
+        "@angular/common": ">=15.0.0",
+        "@angular/core": ">=15.0.0"
+    },
+    "devDependencies": {
+        "@angular-devkit/build-angular": "^20.3.25",
+        "@angular/cli": "^20.3.25",
+        "@angular/common": "^20.3.25",
+        "@angular/forms": "^20.3.25",
+        "@angular/compiler": "^20.3.25",
+        "@angular/compiler-cli": "^20.3.25",
+        "@angular/core": "^20.3.25",
+        "@angular/platform-browser": "^20.3.25",
+        "@angular/platform-browser-dynamic": "^20.3.25",
+        "@angular/router": "^20.3.25",
+        "@types/jasmine": "~5.1.0",
+        "@types/node": "^20.0.0",
+        "jasmine-core": "~5.1.0",
+        "karma": "~6.4.0",
+        "karma-chrome-launcher": "~3.2.0",
+        "karma-coverage": "~2.2.1",
+        "karma-jasmine": "~5.1.0",
+        "karma-jasmine-html-reporter": "~2.1.0",
+        "ng-packagr": "^20.3.2",
+        "rxjs": "~7.8.0",
+        "tailwindcss": "^3.4.0",
+        "typescript": "~5.8.2",
+        "zone.js": "~0.15.0"
+    }
+}
