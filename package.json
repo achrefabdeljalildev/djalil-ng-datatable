@@ -1,6 +1,6 @@
 {
     "name": "@jbeche/ng-datatable",
-    "version": "0.2.1",
+    "version": "0.2.3",
     "description": "ng-datatable - fully customizable & easy to use datatable library",
     "private": false,
     "author": {

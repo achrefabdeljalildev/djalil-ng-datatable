@@ -4,12 +4,6 @@
 
 @layer components {
     /* tables */
-    *,
-    :after,
-    :before {
-        border: 0 solid transparent;
-        box-sizing: border-box;
-    }
     .bh-datatable .bh-table-responsive {
         @apply bh-overflow-auto bh-w-full bh-relative bh-rounded;
     }

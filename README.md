@@ -2,10 +2,6 @@
 
 <br/>
 
-## Example
-
-[Document & Demos](https://ng-datatable-document.vercel.app)
-
 ## Install
 
 #### NPM
@@ -52,68 +48,17 @@ export class AppModule {}
 #### app.component.ts
 
 ```html
-
-import { Component } from '@angular/core';
-import { colDef } from '@jbeche/ng-datatable';
-
-@Component({
-    selector: 'app-root',
-    templateUrl: './app.component.html',
-})
-
-export class AppComponent {
-    cols: Array<colDef> = [];
-    rows: Array<any> = [];
-
-    constructor() {
-        this.initData();
-    }
-
-    initData(){
-        this.cols = [
-            { field: "id", title: "ID", filter: false },
-            { field: "name", title: "Name" },
-            { field: "username", title: "Username" },
-            { field: "email", title: "Email" },
-            { field: "phone", title: "Phone" },
-            { field: "date", title: "Date", type: "date" },
-            { field: "active", title: "Active", type: "bool" },
-            { field: "age", title: "Age", type: "number" },
-            { field: "address.city", title: "Address" },
-            { field: "company.name", title: "Company" },
-        ];
-
-        this.rows = [
-            {
-            id: 1,
-            name: "Leanne Graham",
-            username: "Bret",
-            email: "Sincere@april.biz",
-            address: {
-                street: "Kulas Light",
-                suite: "Apt. 556",
-                city: "Gwenborough",
-                zipcode: "92998-3874",
-                geo: {
-                    lat: "-37.3159",
-                    lng: "81.1496",
-                },
-            },
-            phone: "1-770-736-8031 x56442",
-            website: "hildegard.org",
-            company: {
-                name: "Romaguera-Crona",
-                catchPhrase: "Multi-layered client-server neural-net",
-                bs: "harness real-time e-markets",
-            },
-            date: "Tue Sep 27 2022 22:19:57",
-            age: 10,
-            active: true,
-            },
-            .......
-        ];
-    }
-}
+import { Component } from '@angular/core'; import { colDef } from '@jbeche/ng-datatable'; @Component({ selector: 'app-root', templateUrl: './app.component.html', }) export class
+AppComponent { cols: Array<colDef>
+    = []; rows: Array<any>
+        = []; constructor() { this.initData(); } initData(){ this.cols = [ { field: "id", title: "ID", filter: false }, { field: "name", title: "Name" }, { field: "username",
+        title: "Username" }, { field: "email", title: "Email" }, { field: "phone", title: "Phone" }, { field: "date", title: "Date", type: "date" }, { field: "active", title:
+        "Active", type: "bool" }, { field: "age", title: "Age", type: "number" }, { field: "address.city", title: "Address" }, { field: "company.name", title: "Company" }, ];
+        this.rows = [ { id: 1, name: "Leanne Graham", username: "Bret", email: "Sincere@april.biz", address: { street: "Kulas Light", suite: "Apt. 556", city: "Gwenborough",
+        zipcode: "92998-3874", geo: { lat: "-37.3159", lng: "81.1496", }, }, phone: "1-770-736-8031 x56442", website: "hildegard.org", company: { name: "Romaguera-Crona",
+        catchPhrase: "Multi-layered client-server neural-net", bs: "harness real-time e-markets", }, date: "Tue Sep 27 2022 22:19:57", age: 10, active: true, }, ....... ]; } }</any
+    ></colDef
+>
 ```
 
 ## Props
@@ -202,21 +147,3 @@ export class AppComponent {
 | **isRowSelected(index)** | will return true if the row with given index is selected                     |
 
 <br>
-
-## License
-
-**_@jbeche/ng-datatable_** is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
-
-<br>
-
-## **Our other plugins**
-
-### Vue3 Datatable - [**@bhplugin/vue3-datatable**](https://www.npmjs.com/package/@bhplugin/vue3-datatable)
-
-<br>
-
-## Support
-
-<a target="_blank" href="https://www.buymeacoffee.com/bhplugin">
-  <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="60">
-</a>
