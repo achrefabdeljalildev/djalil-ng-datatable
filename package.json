@@ -8,13 +8,12 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/jbeche/ng-datatable.git"
+        "url": "git+https://github.com/achrefabdeljalildev/djalil-ng-datatable.git"
     },
     "bugs": {
-        "url": "https://github.com/jbeche/ng-datatable/issues"
+        "url": "https://github.com/achrefabdeljalildev/djalil-ng-datatable/issues"
     },
-    "homepage": "https://github.com/jbeche/ng-datatable#readme",
-    "funding": "https://github.com/sponsors/bhaveshpatel200",
+    "homepage": "https://github.com/achrefabdeljalildev/djalil-ng-datatable#readme",
     "keywords": [
         "angular",
         "angularjs",
